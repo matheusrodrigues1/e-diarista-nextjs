@@ -14,6 +14,7 @@ export const FooterContainer = styled("footer")`
   background-color: ${({ theme }) => theme.palette.primary.main};
   color: ${({ theme }) => theme.palette.primary.contrastText};
   padding: ${({ theme }) => theme.spacing(4, 0)};
+  margin-top: auto;
 `;
 
 export const FooterGrid = styled(Container)`
@@ -50,8 +51,8 @@ export const SocialContainer = styled("div")`
 
 export const AppList = styled("ul")`
   display: flex;
-  gap: ${({ theme }) => theme.spacing(8)};
-  list-styled-type: none;
+  gap: ${({ theme }) => theme.spacing()};
+  list-style-type: none;
   padding: 0;
   margin: ${({ theme }) => theme.spacing(2, 0, 3)};
   img {
