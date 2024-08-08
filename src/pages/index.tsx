@@ -1,3 +1,4 @@
+import Presentation from "@patials/index/_presentation";
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 
@@ -10,7 +11,11 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 const Index: NextPage<{ title: string }> = (props) => {
-  return <div style={{ marginTop: "100px" }}>{props.title}</div>;
+  return (
+    <div>
+      <Presentation></Presentation>
+    </div>
+  );
 };
 
 export default Index;
