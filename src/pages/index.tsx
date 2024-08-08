@@ -1,6 +1,6 @@
+import Advantages from "@patials/index/_advantages";
 import Presentation from "@patials/index/_presentation";
 import type { GetStaticProps, NextPage } from "next";
-import Head from "next/head";
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -13,7 +13,8 @@ export const getStaticProps: GetStaticProps = async () => {
 const Index: NextPage<{ title: string }> = (props) => {
   return (
     <div>
-      <Presentation></Presentation>
+      <Presentation />
+      <Advantages />
     </div>
   );
 };
